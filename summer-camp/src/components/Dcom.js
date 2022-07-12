@@ -1,7 +1,11 @@
 import React from 'react'
 
-export const Dcom = () => {
-  return (
-    <div>Dcom</div>
-  )
-}
+export const Dcom = ({children}) => {
+    return (
+      <div>
+          <span>D</span>
+          {children}
+      </div>
+    )
+  }
+  

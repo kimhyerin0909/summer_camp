@@ -1,7 +1,10 @@
 import React from 'react'
 
-export const Hcom = () => {
+export const Hcom = ({children}) => {
   return (
-    <div>Hcom</div>
+    <div>
+        <span>H</span>
+        {children}
+    </div>
   )
 }

@@ -1,24 +1,29 @@
-import logo from './logo.svg';
+import { useState } from 'react';
 import './App.css';
+import { Acom } from './components/Acom';
+import { Bcom } from './components/Bcom';
+import { Ccom } from './components/Ccom';
+import { Gcom } from './components/Gcom';
+import { Hcom } from './components/Hcom';
+import { Jcom } from './components/Jcom';
+import { UserDataContext, UserDataProvider } from './context/userDataContext';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <UserDataProvider>
+      <div className="App">
+        <Acom>
+          <Bcom>
+            <Ccom>
+              <Gcom/>
+            </Ccom>
+          </Bcom>
+        </Acom>
+        <Hcom>
+          <Jcom />
+        </Hcom>
+      </div>
+    </UserDataProvider>
   );
 }
 

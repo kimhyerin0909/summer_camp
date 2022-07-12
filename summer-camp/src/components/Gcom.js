@@ -1,7 +1,13 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import { UserDataContext } from '../context/userDataContext'
 
-export const Gcom = () => {
+export const Gcom = ({children, value}) => {
+  const context = useContext(UserDataContext);
   return (
-    <div>Gcom</div>
+    <div>
+        <span>G</span>
+        {children}
+        <strong>{context}</strong>
+    </div>
   )
 }

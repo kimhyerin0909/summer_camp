@@ -1,7 +1,11 @@
 import React from 'react'
 
-export const Fcom = () => {
-  return (
-    <div>Fcom</div>
-  )
-}
+export const Fcom = ({children}) => {
+    return (
+      <div>
+          <span>F</span>
+          {children}
+      </div>
+    )
+  }
+  

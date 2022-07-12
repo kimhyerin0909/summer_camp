@@ -1,7 +1,10 @@
 import React from 'react'
 
-export const Acom = () => {
+export const Acom = ( {children} ) => {
   return (
-    <div>Acom</div>
+    <div>
+        <span>A</span>
+        {children}
+    </div>
   )
 }

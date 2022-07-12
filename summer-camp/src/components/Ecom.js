@@ -1,7 +1,12 @@
 import React from 'react'
 
-export const Ecom = () => {
-  return (
-    <div>Ecom</div>
-  )
-}
+
+export const Ecom = ({children}) => {
+    return (
+      <div>
+          <span>E</span>
+          {children}
+      </div>
+    )
+  }
+  
