@@ -10,20 +10,7 @@ import { UserDataContext, UserDataProvider } from './context/userDataContext';
 
 function App() {
   return (
-    <UserDataProvider>
-      <div className="App">
-        <Acom>
-          <Bcom>
-            <Ccom>
-              <Gcom/>
-            </Ccom>
-          </Bcom>
-        </Acom>
-        <Hcom>
-          <Jcom />
-        </Hcom>
-      </div>
-    </UserDataProvider>
+    <Bcom />
   );
 }
 
